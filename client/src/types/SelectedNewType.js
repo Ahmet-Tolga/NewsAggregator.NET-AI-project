@@ -1,0 +1,1 @@
+export const SET_SELECTED_NEW_TYPE="SET_SELECTED_NEW";

@@ -1,0 +1,121 @@
+/* src/styles/DetailModal.css */
+
+/* Genel Modal Butonu Stili (Eğer Modal bileşeni içinde buton varsa) */
+.modal-trigger-button {
+    background-color: #007bff !important; /* Mavi tonu */
+    border-color: #007bff !important;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.modal-trigger-button:hover {
+    background-color: #0056b3 !important; /* Koyu mavi hover */
+    border-color: #0056b3 !important;
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Modal Genel Stilleri */
+.modal-content {
+    border-radius: 15px !important; /* Yuvarlak köşeler */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important; /* Derin gölge */
+    border: none !important; /* Kenarlığı kaldır */
+    overflow: hidden; /* İçerik taşmasını engelle */
+}
+
+/* Modal Başlık Kısmı */
+.modal-header {
+    background-color: #f8f9fa !important; /* Açık gri arka plan */
+    border-bottom: 1px solid #e9ecef !important; /* Hafif çizgi */
+    padding: 1.5rem 2rem !important; /* İç boşluk */
+    border-top-left-radius: 15px !important; /* Yuvarlak köşeler */
+    border-top-right-radius: 15px !important;
+}
+
+.modal-header .modal-title {
+    color: #343a40 !important; /* Koyu metin rengi */
+    font-weight: bold !important;
+    font-size: 1.5rem !important;
+}
+
+.modal-header .btn-close { /* Kapatma (X) butonu için */
+    font-size: 1.5rem !important;
+    color: #6c757d !important; /* Gri X işareti */
+    opacity: 0.7 !important;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.modal-header .btn-close:hover {
+    opacity: 1 !important;
+}
+
+/* Modal İçerik Kısmı */
+.modal-body {
+    padding: 2rem !important; /* Daha geniş iç boşluk */
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+    color: #495057 !important; /* Metin rengi */
+    max-height: 70vh; /* Maksimum yükseklik, taşarsa scroll */
+    overflow-y: auto; /* Dikey kaydırma çubuğu */
+}
+
+/* Modal Alt Kısım (Footer) */
+.modal-footer {
+    background-color: #f8f9fa !important; /* Başlıkla aynı açık gri arka plan */
+    border-top: 1px solid #e9ecef !important; /* Hafif çizgi */
+    padding: 1rem 2rem !important; /* İç boşluk */
+    border-bottom-left-radius: 15px !important; /* Yuvarlak köşeler */
+    border-bottom-right-radius: 15px !important;
+    justify-content: flex-end !important; /* Butonları sağa hizala */
+    gap: 10px; /* Butonlar arası boşluk */
+}
+
+/* Modal Footer Butonları */
+.modal-footer .btn-primary {
+    background-color: #28a745 !important; /* Yeşil (Tamam) butonu */
+    border-color: #28a745 !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #218838 !important; /* Koyu yeşil hover */
+    border-color: #1e7e34 !important;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #6c757d !important; /* Gri (İptal) butonu */
+    border-color: #6c757d !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #5a6268 !important; /* Koyu gri hover */
+    border-color: #545b62 !important;
+}
+
+/* Scrollbar özelleştirmesi (opsiyonel) */
+.modal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
