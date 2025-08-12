@@ -4,6 +4,7 @@ import {
   Button, Card, CardBody, Row, CardTitle, Col, Badge,
   Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Alert
 } from "reactstrap";
+import { BsChatLeft } from 'react-icons/bs';
 import { setSelectedNewAction } from "../../redux/actions/SelectedNewActions";
 import { openModalAction } from "../../redux/actions/DetailModalActions";
 import "../../styles/Home.css";
@@ -186,7 +187,7 @@ const Home = (props) => {
                                                     className="chat-toggle-button"
                                                     onClick={() => handleChatButtonClick(item.title+item.description)}
                                                 >
-                                                    s
+                                                   <BsChatLeft />
                                                 </Button>
                                             </div>
                                         </div>
